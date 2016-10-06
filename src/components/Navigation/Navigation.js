@@ -16,8 +16,8 @@ class Navigation extends React.Component {
       name: "Directions & Hours<br/><span>1633 Stitt St. Wabash, IN 46992</span>",
       url: "/directions-hours"
     }];
-    const createListItem = navitems.map((item) => {
-      return <NavItem name={item.name} url={item.url} />
+    const createListItem = navitems.map((item, i) => {
+      return <NavItem key={i} name={item.name} url={item.url} />
     });
     return (
       <ul className="mainnav">
