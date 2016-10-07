@@ -10,7 +10,7 @@
     "react": "^15.3.2",
     "react-dom": "^15.3.2"
   },
-  "homepage": "http://btyner.github.io/harrysoldkettle",
+  "homepage": "http://btyner.github.io/HarrysOldKettle",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
