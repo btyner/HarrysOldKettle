@@ -1,4 +1,5 @@
 import React from 'react';
+import './navigation.css';
 
 class Navigation extends React.Component {
   constructor() {
@@ -28,19 +29,11 @@ class Navigation extends React.Component {
     return (
       <ul className="mainnav">
         {
-          this.navitems.map((item) => {
-            return <NavItem key={item.id} name={item.name} url={item.url} />
+          this.navitems.map((item, idx) => {
+            return <li key={item.id}><a href={item.url} className={ idx === 0 && "active"} dangerouslySetInnerHTML={{__html: item.name}} /></li>
           })
         }
       </ul>
-    )
-  }
-}
-
-class NavItem extends React.Component {
-  render() {
-    return (
-      <li><a href={this.props.url} dangerouslySetInnerHTML={{__html: this.props.name}} /></li>
     )
   }
 }
