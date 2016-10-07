@@ -6,10 +6,10 @@ function Footer() {
   return (
     <footer>
       <div className="pagebox">
-        <ul itemScope="" itemType="http://schema.org/PostalAddress">
+        <ul itemScope="itemScope" itemType="http://schema.org/LocalBusiness">
           <li>
             <span itemProp="name">Harry’s Old Kettle Pub & Grill</span><br/>
-            <span itemProp="streetAddress">1633 Stitt St.</span> <span itemProp="addressLocality">Wabash</span>, <span itemProp="addressRegion">IN</span> <span itemProp="postalCode">46992</span>
+            <span itemProp="address" itemScope="itemScope" itemType="http://schema.org/PostalAddress"><span itemProp="streetAddress">1633 Stitt St.</span> <span itemProp="addressLocality">Wabash</span>, <span itemProp="addressRegion">IN</span> <span itemProp="postalCode">46992</span></span>
           </li>
           <li>
             <a href="tel:+12605637317" itemProp="telephone" content="+12605637317">(260) 563-7317</a>
