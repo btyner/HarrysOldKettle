@@ -1,0 +1,127 @@
+.whats-on-callouts {
+	position:relative;
+	margin:-200px auto 0;
+	background-color:#FFFFFF;
+	padding:50px 0;
+	z-index: 7;
+	max-width:1520px;
+}
+.whats-on-callouts article {
+	display:block;
+	width:50%;
+	text-align:center;
+	vertical-align: top;
+	float:left;
+}
+.whats-on-callouts article figure {
+	margin:0;
+}
+.whats-on-callouts article .heading {
+	margin:20px 0;
+}
+.whats-on-callouts article p {
+	display: block;
+	margin:0 auto;
+	padding:20px 0;
+	font-size:1.6rem;
+	line-height:2.2rem;
+	width:395px;
+	text-align:left;
+}
+.whats-on-callouts article a {
+	display:inline-block;
+	padding:16px 0;
+	border-radius:10px;
+	border:solid 2px #BF0000;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:1.8rem;
+	font-weight:700;
+	width:200px;
+}
+.whats-on-callouts article a:hover {
+	border-color:#F5A0A0;
+}
+
+.testimonials {
+	background-color:#AE2D18;
+	padding:30px;
+	text-align:center;
+	margin-bottom:-115px;
+}
+.testimonials img {
+	display:block;
+	margin:0 auto;
+}
+.testimonials p {
+	display:block;
+	width:80%;
+	margin:20px auto 10px;
+	font-size:2rem;
+	color:#FFFFFF;
+}
+.testimonials .author {
+	text-align:right;
+	font-size:1.6rem;
+	font-style:italic;
+	color:#FFFFFF;
+}
+
+.beige { background-color:#ffebd6;padding:200px 0 50px; }
+.place-to-be-callouts { text-align:center; }
+.place-to-be-callouts figure { margin:0 0 20px; }
+.place-to-be-callouts section {
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content: flex-start;
+	align-items:flex-start;
+}
+.place-to-be-callouts article {
+	width:225px;
+	margin:0 40px;
+}
+.place-to-be-callouts article .separator {
+	width:60px;
+	height:2px;
+	margin:10px auto;
+	background-color:#AE2D18;
+}
+.place-to-be-callouts article p {
+	display: block;
+	margin:0 auto;
+	padding:10px 0 20px;
+	font-size:1.6rem;
+	line-height:2.2rem;
+	text-align:left;
+}
+
+.establishment {
+	background-color:#12586C;
+	font-family:'Galada', cursive;
+	font-size:3.6rem;
+	line-height:3.6rem;
+	color:#FFFFFF;
+	padding:30px 0 20px;
+	text-align:center;
+}
+
+.old-saloon-profile {
+	background:url('./old-saloon-building.jpg') no-repeat center center;
+	background-size: cover;
+	padding:60px 0;
+}
+.old-saloon-profile article { width:400px; }
+.old-saloon-profile article figure { margin:0; }
+.old-saloon-profile article figure img {
+	max-width:100%;
+	display:block;
+}
+.old-saloon-profile article p {
+	display: block;
+	margin:0 auto;
+	padding:20px 0 30px;
+	font-size:1.6rem;
+	line-height:2.2rem;
+	text-align:left;
+}
+.old-saloon-profile article a { display:block; }
