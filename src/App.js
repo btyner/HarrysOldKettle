@@ -1,18 +1,17 @@
-import React from 'react';
+import React, {Component} from 'react';
 import MainMenu from './components/MainMenu';
-import Header from './components/Header';
-import Body from './components/Body';
 import Footer from './components/Footer';
 
-function App() {
-  return (
-    <div className="MasterContainer">
-      <MainMenu />
-      <Header />
-      <Body />
-      <Footer />
-    </div>
-  )
+class App extends Component {
+  render() {
+    return (
+      <div className="MasterContainer">
+        <MainMenu />
+        {this.props.children}
+        <Footer />
+      </div>
+    )
+  }
 }
 
 export default App;

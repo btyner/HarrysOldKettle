@@ -1,5 +1,5 @@
 import React from 'react';
-import './navigation.css';
+import { IndexLink, Link } from 'react-router';
 
 class Navigation extends React.Component {
   constructor() {
@@ -7,20 +7,16 @@ class Navigation extends React.Component {
 
     this.navitems = [{
       id: 1,
-      name: "Home",
-      url: "/"
+      name: "The Kettle Story",
+      url: "History"
     },{
       id: 2,
-      name: "The Kettle Story",
-      url: "/kettle-story"
+      name: "Menu",
+      url: "Menu"
     },{
       id: 3,
-      name: "Menu",
-      url: "/menu"
-    },{
-      id: 4,
       name: "Directions & Hours<br/><span>1633 Stitt St. Wabash, IN 46992</span>",
-      url: "/directions-hours"
+      url: "Directions"
     }];
 
   }
@@ -28,9 +24,12 @@ class Navigation extends React.Component {
   render() {
     return (
       <ul className="mainnav">
+        <li>
+          <IndexLink to="/" activeClassName="active">Home</IndexLink>
+        </li>
         {
           this.navitems.map((item, idx) => {
-            return <li key={item.id}><a href={item.url} className={ idx === 0 && "active"} dangerouslySetInnerHTML={{__html: item.name}} /></li>
+            return <li key={item.id}><Link to={item.url} activeClassName="active" dangerouslySetInnerHTML={{__html: item.name}} /></li>
           })
         }
       </ul>
