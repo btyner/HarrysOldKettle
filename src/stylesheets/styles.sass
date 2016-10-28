@@ -3,7 +3,8 @@ html
 
 body
   font-family: 'Open Sans', sans-serif
-  font-size: 1.4rem
+  font-size: 1.6rem
+  line-height: 2.2rem
 
 .pagebox
   width: 1240px
@@ -117,13 +118,35 @@ header .logo img
 header .callout
   padding: 100px 0 20px
 
+.home-page > header
+  background-position: center 30%
+
+.history-page > header
+  background-position: center 120%
+
+.menu-page > header
+  background-position: center 30%
+
+.directions-page > header
+  background-position: center 30%
+
+.error-page > header
+  background-position: center 30%
+
 .start-content
   position: relative
   margin: -200px auto 0
   background-color: #FFFFFF
-  padding: 50px 0
+  padding: 50px 0 0
   z-index: 7
   max-width: 1520px
+  &.menu
+    background-color: #ffebd6
+  &.directions
+    background-color: #F4F8F9
+    max-width: 1240px
+    padding: 50px 0 100px
+    margin-bottom: 100px
 
 .whats-on-callouts
   position: relative
@@ -169,6 +192,23 @@ header .callout
 .whats-on-callouts article a:hover
   border-color: #F5A0A0
 
+.stop-by-today
+  display: block
+  width: 519px
+  height: 36px
+  background: url(/img/stop-by-today.png) no-repeat 0 0
+  &:hover
+    background-position: 0 100%
+
+.kettle-story
+  display: block
+  width: 400px
+  height: 31px
+  background: url(/img/kettle-story.png) no-repeat 0 0
+  background-size: 400px 62px
+  &:hover
+    background-position: 0 100%
+
 .testimonials
   background-color: #AE2D18
   padding: 30px
@@ -194,7 +234,10 @@ header .callout
 
 .beige
   background-color: #ffebd6
-  padding: 200px 0 50px
+  &.home
+    padding: 200px 0 50px
+  &.history
+    margin: 0
 
 .place-to-be-callouts
   text-align: center
@@ -260,6 +303,97 @@ header .callout
 
 .old-saloon-profile article a
   display: block
+
+.leave-your-mark
+  text-align: center
+  figure
+    margin: 0 0 30px
+  p
+    padding: 0 30px 40px
+    text-align: left
+
+.locally-owned
+  background-color: #236E83
+  padding: 0 180px 100px
+  text-align: center
+  position: relative
+  top: 120px
+  margin: -120px 0 0
+  h1
+    font-family: 'Galada', cursive
+    font-size: 6rem
+    line-height: 6rem
+    font-weight: 400
+    color: #FFFFFF
+    margin: 0
+    padding: 50px 0
+  .text
+    float: left
+    color: #FFFFFF
+    width: 38%
+    text-align: left
+  figure
+    margin: 0
+    width: 496px
+    float: right
+    img
+      max-width: 100%
+
+.awesome-accents
+  text-align: center
+  padding: 180px 150px 100px
+  .title
+    margin: 30px 0
+  .owners
+    float: left
+    width: 400px
+    margin: 0
+    background-color: #FFFFFF
+    padding: 20px
+    img
+      max-width: 100%
+  .text
+    width: 45%
+    float: right
+    text-align: left
+
+.contact-info
+  text-align: center
+  padding: 0 30px
+  .google-map
+    float: left
+    width: 47%
+    background-color: #FFFFFF
+    padding: 10px
+  .info
+    float: right
+    width: 50%
+    .title
+      color: rgb(136, 20, 2)
+      font-size: 2.5rem
+      font-weight: 700
+      letter-spacing: -.08rem
+      margin: 10px 0
+    .get-directions-link
+      width: 433px
+      height: 41px
+      display: inline-block
+      margin: 20px 0
+      background: url('/img/get-direction.png') no-repeat 0 0
+      &:hover
+        background-position: 0 100%
+    .hours-list
+      border-top: solid 1px #222222
+      width: 230px
+      margin: 30px auto 0
+      padding: 20px 40px
+      dt, dd
+        width: 50%
+        text-align: left
+        display: inline-block
+        padding: 8px 0
+      dd
+        margin: 0
 
 footer
   background-color: #881403

@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 export default function Home() {
   return (
-    <div>
+    <div className="home-page">
       <Header />
       <Body />
     </div>
@@ -17,20 +18,16 @@ function Header() {
   return (
     <header style={bgImg}>
       <div className="pagebox">
-        <a href="/" title="Harry's Old Kettle Pub & Grill" className="logo">
+        <Link to="/" title="Harry's Old Kettle Pub & Grill" className="logo">
           <figure>
             <img src={process.env.PUBLIC_URL + "/img/harrys-old-kettle-logo.png"} alt="Harry's Old Kettle Pub & Grill Logo"/>
           </figure>
-        </a>
+        </Link>
         <figure className="callout">
           <img src={process.env.PUBLIC_URL + "/img/welcome-great-beer-food-times.png"}
                alt="Welcome to the Kettle! Great Food, Great Beer, Great Times!"/>
         </figure>
-        <a href="/" className="stop-by-today">
-          <figure>
-            <img src={process.env.PUBLIC_URL + "/img/stop-by-today.png"} alt="Stop by today!"/>
-          </figure>
-        </a>
+        <Link to="directions" className="stop-by-today" />
       </div>
     </header>
   )
@@ -71,7 +68,7 @@ function Body() {
           <img src={process.env.PUBLIC_URL + "/img/right-quote.png"} alt="Ending quote mark"/>
         </section>
       </div>
-      <div className="beige">
+      <div className="beige home">
         <div className="pagebox">
           <div className="place-to-be-callouts">
             <figure>
@@ -103,11 +100,7 @@ function Body() {
             </figure>
             <p>From 2013, Harry’s chef-inspired menu to Judy’s famous drinks, “Harry’s Old Kettle Pub & Grill” is THE
               place to be in Wabash.</p>
-            <a href="/">
-              <figure>
-                <img src={process.env.PUBLIC_URL + "/img/kettle-story.png"} alt="The Kettle Story"/>
-              </figure>
-            </a>
+            <Link to="history" className="kettle-story" />
           </article>
         </div>
       </div>
